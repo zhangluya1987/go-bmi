@@ -12,7 +12,7 @@ func RemoveRepeatElementsForFloat64(oldArray []float64) (newArray []float64) {
 	for i := 0; i < len(oldArray); i++ {
 		repeatElement := false
 		for j := i + 1; j < len(oldArray); j++ {
-			if newArray[i] == oldArray[j] {
+			if oldArray[i] == oldArray[j] {
 				repeatElement = true
 				break
 			}
