@@ -8,7 +8,7 @@ import (
 func RemoveRepeatElementsForFloat64(oldArray []float64) (newArray []float64) {
 	// 如果切片的元素相同 则我们需要进一步做去重处理
 	sort.Float64s(oldArray)
-
+	newArray = make([]float64, 0)
 	for i := 0; i < len(oldArray); i++ {
 		repeatElement := false
 		for j := i + 1; j < len(oldArray); j++ {
